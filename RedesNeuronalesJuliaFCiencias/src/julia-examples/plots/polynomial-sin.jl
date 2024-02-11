@@ -1,3 +1,5 @@
+using GLMakie
+
 x = -2pi:0.1:2pi
 approx = fill(0.0, length(x))
 cmap = [:gold, :deepskyblue3, :orangered, "#e82051"]
@@ -15,6 +17,6 @@ with_theme(palette = (; patchcolor = cgrad(cmap, alpha=0.45))) do
     band!(x, sin.(x), approx .+= -x .^ 7 / 5040; label = L"n = 3")
     limits!(-3.8, 3.8, -1.5, 1.5)
     axislegend(; position = :ct, backgroundcolor = (:white, 0.75), framecolor = :orange)
-    save("./assets/approxsin.png", fig, size = (800, 600))
+    # save("approxsin.png", fig, size = (800, 600))
     fig
 end

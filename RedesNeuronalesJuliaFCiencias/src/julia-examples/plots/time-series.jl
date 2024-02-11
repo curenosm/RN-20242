@@ -1,3 +1,5 @@
+using CairoMakie
+
 f = Figure()
 
 traces = cumsum(randn(10, 5), dims = 1)
