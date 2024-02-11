@@ -1,4 +1,5 @@
 # Cargamos las funciones que definimos para los modelos
+# (A + B * V) / (C + H * exp((V + D) / F))
 
 function alpha_n(V)
     if abs(V - 10) < 0.01
