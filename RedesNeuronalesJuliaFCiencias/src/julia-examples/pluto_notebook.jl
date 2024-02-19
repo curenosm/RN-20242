@@ -15,7 +15,14 @@ macro bind(def, element)
 end
 
 # ╔═╡ ac8d66df-dc24-406a-bce5-969ac83c2151
-using PlutoUI, Statistics, LaTeXStrings, LinearAlgebra, OrdinaryDiffEq, WGLMakie
+begin
+using PlutoUI
+using Statistics
+using LaTeXStrings
+using LinearAlgebra
+using OrdinaryDiffEq
+using WGLMakie
+end
 
 # ╔═╡ 2bb53128-b372-4a05-af7f-a2e84bd73964
 begin
